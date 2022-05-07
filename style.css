@@ -1,0 +1,107 @@
+:root {
+  --primery-color-100: #f5f1ed;
+  --primery-color-400: #a99985;
+  --primery-color-600: #585b56;
+  --primery-color-900: #252323;
+  --ff-primery: 'Libre Bodoni', serif;
+}
+
+h2,
+h1,
+p,
+body {
+  margin: 0;
+}
+p {
+  font-size: 1.2rem;
+}
+
+h2,
+h1,
+h3 {
+  font-family: var(--ff-primery);
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+h1,
+h2,
+p,
+img {
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  /* width: min(20em, 100%); */
+  max-width: 100%;
+}
+@media (min-width: 40em) {
+  img {
+    max-width: 50%;
+  }
+}
+header,
+section {
+  padding: 3rem 0;
+}
+.conteiner {
+  margin-inline: auto;
+  width: min(90%, 80.5rem);
+}
+.conteiner--narrow {
+  max-width: 19rem;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+header {
+  background: var(--primery-color-900);
+  text-align: center;
+  font-size: 1rem;
+}
+header h2 {
+  color: var(--primery-color-100);
+}
+header p {
+  color: var(--primery-color-100);
+}
+
+@media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem, 0;
+  }
+}
+.section--1 {
+  background: var(--primery-color-100);
+}
+.section--1 h2 {
+  text-align: center;
+  color: var(--primery-color-900);
+}
+
+.section--2 h2,
+.section--3 h2 {
+  color: var(--primery-color-900);
+}
+.section--2 {
+  background: var(--primery-color-400);
+}
+.section--3 {
+  background: var(--primery-color-100);
+}
